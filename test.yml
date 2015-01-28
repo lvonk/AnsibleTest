@@ -1,0 +1,7 @@
+---
+
+- hosts: test
+  sudo: true
+  roles:
+    - httpd
+    - role1

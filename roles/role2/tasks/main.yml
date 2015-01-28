@@ -1,0 +1,8 @@
+---
+- name: copy templates
+  template: src={{ item }}.j2 dest=~/{{ item }}
+  with_items:
+    - foo.txt
+  notify: restart {{ service_name }}
+
+
